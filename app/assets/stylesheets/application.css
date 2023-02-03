@@ -1,0 +1,55 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ @font-face { font-family: 'Quicksand'; src: url(./font/Quicksand-VariableFont_wght.ttf); }
+
+
+* {
+    margin: 0;
+    border: 0;
+}
+
+body {
+    background-color: #221B23;
+    color: white;
+    font-family: 'Quicksand';
+}
+
+header {
+    display: flex;
+    align-items: center;
+    border-bottom: 0.2rem solid white;
+}
+
+ul {
+    display: flex;
+    column-gap: 3rem;
+}
+
+
+li {
+    list-style: none;
+    font-size: max(2ch, 5%);
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+img {
+    width: max(10%, 10rem);
+}
+
+

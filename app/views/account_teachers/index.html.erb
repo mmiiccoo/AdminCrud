@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Account teachers</h1>
+
+<div id="account_teachers">
+  <% @account_teachers.each do |account_teacher| %>
+    <%= render account_teacher %>
+    <p>
+      <%= link_to "Show this account teacher", account_teacher %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New account teacher", new_account_teacher_path %>
